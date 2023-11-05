@@ -1,14 +1,13 @@
-export const Profile = { username, tag, location, avatar, stats } => {
-return(
-
-<ProfileCard>
-  <Describtion>
-    <Avatar src={avatar} alt="User avatar"/>
-    <Name>{username}</Name>
+export const Profile = ({ username, tag, location, avatar, stats }) => {
+  return (
+    <ProfileCard>
+      <Describtion>
+        <Avatar src={avatar} alt="User avatar" />
+        <Name>{username}</Name>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
-  </Describtion>
-{/* 
+      </Describtion>
+      {/* 
   <ul class="stats">
     <li>
       <span class="label">Followers</span>
@@ -23,6 +22,6 @@ return(
       <span class="quantity">3000</span>
     </li>
   </ul> */}
-</ProfileCard>
-)
+    </ProfileCard>
+  );
 };
