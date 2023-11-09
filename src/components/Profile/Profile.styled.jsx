@@ -1,33 +1,30 @@
 import styled from 'styled-components';
 
-export const ProfileCard = styled.div`
+export const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 20px;
-  margin: 0 auto;
-  background-color: #d9e7b5;
-  width: 360px;
-  max-width: 100%;
-  border-radius: 20px 20px 0 0;
-  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3);
+  background-color: #cff2b5;
+  width: 300px;
+  border-radius: 20px;
 `;
 
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+`;
+
+export const Avatar = styled.img`
+  width: 240px;
 `;
 
 export const UserName = styled.p`
   font-size: 36px;
   font-weight: bold;
-`;
-
-export const Avatar = styled.img`
-  width: 240px;
 `;
 
 export const Tag = styled.p`
@@ -43,12 +40,10 @@ export const Stats = styled.ul`
 `;
 
 export const StatsItem = styled.li`
-  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-color: #b1cf9a;
+  width: 84px;
   border-radius: 8px;
-  background-color: #a8d3ee;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 `;

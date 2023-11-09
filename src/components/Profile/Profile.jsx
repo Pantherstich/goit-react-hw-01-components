@@ -1,5 +1,5 @@
 import {
-  ProfileCard,
+  ProfileContainer,
   Description,
   UserName,
   Avatar,
@@ -10,12 +10,12 @@ import {
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <ProfileCard>
+    <ProfileContainer>
       <Description>
         <Avatar src={avatar} alt="User avatar" />
         <UserName>{username}</UserName>
-        <Tag>@{tag}</Tag>
-        <p>{location}</p>
+        <Tag>{tag}</Tag>
+        <p>{location}l</p>
       </Description>
 
       <Stats>
@@ -32,6 +32,6 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
           <span>{stats.likes}</span>
         </StatsItem>
       </Stats>
-    </ProfileCard>
+    </ProfileContainer>
   );
 };
