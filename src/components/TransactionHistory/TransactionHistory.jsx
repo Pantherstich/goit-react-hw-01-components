@@ -11,17 +11,17 @@ export const TransactionHistory = ({ transactions }) => {
         </tr>
       </TableHeader>
 
-      <tbody>
-        {transactions.map(transaction => {
-          return (
+      {transactions.map(transaction => {
+        return (
+          <tbody>
             <TableRow key={transaction.id}>
               <td>{transaction.type}</td>
               <td>{transaction.amount}</td>
               <td>{transaction.currency}</td>
             </TableRow>
-          );
-        })}
-      </tbody>
+          </tbody>
+        );
+      })}
     </Table>
   );
 };
